@@ -1,10 +1,10 @@
 version: "2"
 sql:
   - engine: "postgresql"
-    queries: "query.sql"
-    schema: "query.sql"
+    schema: "schema.sql" # Your schema file
+    queries: "query.sql" # Your query file
     gen:
       go:
-        package: "database"
-        sql_package: "pgx/v5"
-        out: "db1"
+        package: "database" # The generated package name
+        out: "../database" # Output directory for the generated code
+        sql_package: "pgx/v5" # Specify using pgx v5
