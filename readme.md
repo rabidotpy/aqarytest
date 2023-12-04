@@ -1,4 +1,7 @@
 # Golang Project Assessment by Aqary International Group
+# This is Documentation for Question 1
+# Question 2, 3 and 4 live inside /questions directory
+-------------------------------------------------------
 # Candiate: Rabi Ul Islam
 ## Overview
 
