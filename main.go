@@ -4,6 +4,7 @@ import (
 	"aqarytest/database"
 	"aqarytest/handlers"
 	"context"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -20,7 +21,7 @@ import (
 
 func main() {
 
-    questions.Questions2("akdcbkjbbbbbb");
+    fmt.Println(questions.Questions2("akdcbkjbbbbbb"));
     envErr := godotenv.Load()
     if envErr != nil {
         log.Fatal("Error loading .env file")
