@@ -4,9 +4,12 @@ import (
 	"aqarytest/database"
 	"aqarytest/handlers"
 	"context"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
+
+	questions "aqarytest/questions"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -17,6 +20,8 @@ import (
 // we can use docker compose to run the app and the db
 
 func main() {
+
+    fmt.Println(questions.Questions2("akdcbkjbbbbbb"));
     envErr := godotenv.Load()
     if envErr != nil {
         log.Fatal("Error loading .env file")
